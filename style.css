@@ -1,0 +1,425 @@
+
+    /* **************
+    Navigation Section
+    ************** */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8e4d4;
+        /* Because we want header to be sticky later */
+        height: 4.6rem;
+        padding: 2 4.8rem;
+    }
+    .logo{
+        width : 100px ;
+        height: 90px ;
+        border-radius: 50%;
+    }
+    li{
+        float: left;
+        list-style: none;
+        font-size: 20px;
+      
+    }
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    li a:hover {
+      background-color: rgba(255, 255, 255, 0.808);
+      color:black;
+      border-radius: 10%;
+    }
+    .nav-sign{
+      background-color: #bb6820 ;
+      padding: 8px 10px;
+      color: black;
+      border-radius: 45%;
+    }
+    /* img{
+    background-image: url('image.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    } */
+    /***************
+     Main header Section
+    ****************/
+    .heading {
+      /* max-width: 130rem; */
+      margin: 0 auto;
+      padding: 0 3.2rem;
+      display: grid;
+      margin-bottom: 0px;
+      /* height: 200px; */
+      grid-template-columns: 1fr 1fr;
+      /* column-count: 2; */
+      /* column-gap: 0px; */
+      gap: 1rem;
+      /* align-items: center; */
+    }      
+    .main-heading {
+      margin: 35px 30px;
+      font-size: 50px;
+      line-height: 1.05;
+      margin-bottom: 1rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 700;
+      color: black;
+      letter-spacing: -0.5px;
+    }
+    p{
+      margin: 10px 33px;
+      text-align: justify;
+      font-size: 26px;
+    }
+    .hero-img{
+      position: relative;
+      margin: 10% 6% 10%;
+      overflow: hidden;
+      /* width: 100%;
+      height: 100%; */
+    }
+    .main-img{
+      width :  550px ;
+      height: 400px;
+      margin-top: 30px;    
+    }
+  /* **************
+   Swiper Section
+  ************** */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style-type: none;
+  text-decoration: none;
+} */
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+#tranding {
+  margin-top: 1px;
+  font-size: 65.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  
+}
+section{
+  margin-bottom: 150px;
+}
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+/* body {
+  font-size: 1.6rem;
+  background: var(--bg);
+} */
+
+.container{
+  max-width: 100rem;
+  max-height: 20rem;
+  padding: 0rem;
+  margin: 0 auto;
+  /* margin-top: 1px; */
+}
+
+.text-center {
+  margin-top: 0.1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 0.4rem 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+
+#tranding {
+  padding: 4rem 0;
+  /* margin-bottom: 60px; */
+}
+/* 
+@media (max-width:1440px) {
+  #tranding {
+    padding: 1rem 0;
+  }
+} */
+#tranding .tranding-slider {
+  height: 30rem;
+  padding: 1rem 0;
+  bottom: 10px;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 40rem;
+  }
+}
+/* food name and trading  */
+.tranding-slide {
+  /* top: 0.5px; */
+  /* font-size: 2.5px; */
+  width: 30rem;
+  height: 26rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 10rem !important;
+    height: 16rem !important;
+    /* padding: 10px 5px 2px 1px; */
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 15rem !important;
+    height: 26rem !important;
+    /* padding: 10px 5px 2px 1px; */
+  }
+}
+/* swiper background image alignment */
+.tranding-slide .tranding-slide-img img {
+  width: 26rem;
+  height: 26rem;
+  /* padding: 10px 5px 2px 1px; */
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.tag--vege{
+  background-color: #026312;
+  /* border-radius: 30%; */
+}
+.tag--nonveg{
+  background-color: #c90202e8;
+  /* border-radius: 10%; */
+}
+.tranding-slide-content-bottom{
+  font-size: 5px;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: relative;
+  top: 1rem;
+  bottom: 2rem;
+  right: 2rem;
+  color: var(--white);
+ 
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--white);
+  font-size: 1px;
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.rating ion-icon {
+  color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  margin-top:  25px;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 40% !important;
+    transform: translateX(-40%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+/* Slider Arrow */
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  top: 0.5px;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2.5rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+  /* top:0.5rem;/ */
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+/* ******************
+FOOTER
+****************** */
+/* .grid--footer {
+  grid-template-columns: repeat(6, 1fr);
+  /* margin-top: 10rem; 
+}*/
+/* .no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}  */
+.grid--footer {
+  column-count: 3;
+  column-gap: 10px;
+}
+.footer {
+  margin-top:1px;
+  width: 1320px;
+  height: 300px;
+  padding: 1rem 0;
+  background-color: #FFD6AA;
+  /* border-top: 10px solid #eee; */
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  font-family: "Sofia", sans-serif;
+  font-weight: 700;
+}
+.footerimg{
+  display: block;
+  width : 400px ;
+  height: 250px;
+  font-size: 5rem;
+  /* margin-bottom: 1.5rem; */
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.footer-heading {
+  margin-top: 2px ;
+  font-size: 1.8rem;
+  font-weight: 500;
+  /* margin-bottom: 2rem; */
+}
+
+.address {
+  /* margin-bottom: 2rem; */
+  font-size: 1.2rem;
+  color: #767676;
+}
